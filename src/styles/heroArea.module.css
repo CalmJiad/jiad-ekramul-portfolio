@@ -1,0 +1,25 @@
+.hidden {
+  display: none;
+}
+
+@media (min-width: 1440px) and (max-width: 3500px) {
+  .hidden {
+    display: block !important;
+  }
+  .profileImage {
+    height: 626px;
+    width: 402px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .hidden {
+    display: block !important;
+  }
+  .profileImage {
+    height: 417px;
+    width: 268px;
+    object-fit: cover;
+  }
+}

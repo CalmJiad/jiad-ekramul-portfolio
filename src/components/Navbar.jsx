@@ -65,40 +65,46 @@ const Navbar = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <a href="#">Projects</a>
+              <a href="#projects">Projects</a>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <a href="#">Resume</a>
+              <a
+                href="https://drive.google.com/file/d/1kH6rpSYw6X-uCyPNoJNzdBlQuFBd2aXQ/view?usp=sharing"
+                target="__blank"
+              >
+                Resume
+              </a>
             </motion.li>
           </ul>
         </div>
+        <div className="pr-12"></div>
         <motion.a
-          href="#"
+          href="#Home"
           className="btn btn-ghost text-center font-cute-font text-3xl font-medium"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
