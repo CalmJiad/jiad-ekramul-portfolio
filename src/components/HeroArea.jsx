@@ -44,7 +44,7 @@ const HeroArea = () => {
     <div className="w-full h-[100vh] lg:bg-[url(/images/hero.png)] bg:transparent relative bg-cover bg-center bg-no-repeat border-b-[1.9em] border-[#232427] overflow-hidden">
       <div className="w-full h-full absolute top-0 left-0 bg-[#181E29] bg-opacity-70 flex justify-between items-center px-16">
         <div className="w-7/12 flex items-center justify-center ml-8">
-          <div className="flex justify-center items-center">
+          <div className="flex pb-24">
             <motion.div
               className="textContainer"
               variants={textVariants}
@@ -53,12 +53,12 @@ const HeroArea = () => {
             >
               <motion.h2
                 variants={textVariants}
-                className="font-cute-font text-[4.8em] tracking-[5px] font-medium mb-0 pb-0"
+                className="font-cute-font text-[#836aae] text-[4.8em] tracking-[5px] font-semibold mb-0 pb-0"
               >
                 Md Ekramul Haque Jiad
               </motion.h2>
               <motion.h1
-                className="text-[1.5em] font-poppins"
+                className="text-[1.5em] tracking-[2px] font-poppins font-medium"
                 variants={textVariants}
               >
                 Software Developer & DevOps Enthusiast
