@@ -105,7 +105,7 @@ const Navbar = () => {
         <div className="pr-12"></div>
         <motion.a
           href="#Home"
-          className="btn btn-ghost text-center text-[#6bc4a6] font-cute-font text-3xl font-medium"
+          className="btn btn-ghost text-center font-cute-font text-3xl font-medium"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -114,12 +114,12 @@ const Navbar = () => {
         </motion.a>
       </div>
       <div className="navbar-center hidden sm:flex">
-        <ul className="menu menu-horizontal px-12">
+        <ul className="menu menu-horizontal px-16">
           <motion.li
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="hover:text-white"
+            className=" hover:text-white text-base pr-2"
           >
             <a href="#">Home</a>
           </motion.li>
@@ -127,7 +127,7 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="hover:text-white"
+            className="hover:text-white text-base pr-2"
           >
             <a href="#">Projects</a>
           </motion.li>
@@ -135,7 +135,7 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="hover:text-white"
+            className="hover:text-white text-base pr-2"
           >
             <a href="#">About</a>
           </motion.li>
@@ -143,7 +143,7 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="hover:text-white"
+            className="hover:text-white text-base pr-2"
           >
             <a href="#">Contact</a>
           </motion.li>
@@ -151,7 +151,7 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="hover:text-white"
+            className="hover:text-white text-base pr-2"
           >
             <a
               href="https://drive.google.com/file/d/1kH6rpSYw6X-uCyPNoJNzdBlQuFBd2aXQ/view?usp=sharing"
