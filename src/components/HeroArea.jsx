@@ -58,7 +58,7 @@ const HeroArea = () => {
                 Md Ekramul Haque Jiad
               </motion.h2>
               <motion.h1
-                className="text-[1.5em] tracking-[2px] font-poppins font-medium"
+                className="text-[1.5em] tracking-[2px] font-poppins font-medium text-white"
                 variants={textVariants}
               >
                 Software Developer & DevOps Enthusiast
@@ -68,13 +68,13 @@ const HeroArea = () => {
                 className="absolute flex items-center gap-x-8 mt-8"
               >
                 <motion.button
-                  className="px-8 py-3 rounded-md bg-transparent border border-white btn btn-neutral hover:bg-[#2b3344] hover:border-white hover:text-white"
+                  className="px-8 py-3 rounded-md bg-transparent border border-white btn btn-neutral hover:bg-[#2b3344] text-white hover:border-white hover:text-white"
                   variants={textVariants}
                 >
                   Projects
                 </motion.button>
                 <motion.button
-                  className="px-8 py-3 rounded-md bg-transparent border border-white btn btn-neutral hover:bg-[#2b3344] hover:border-white hover:text-white"
+                  className="px-8 py-3 rounded-md bg-transparent border border-white btn btn-neutral hover:bg-[#2b3344] text-white hover:border-white hover:text-white"
                   variants={textVariants}
                 >
                   Contact Me

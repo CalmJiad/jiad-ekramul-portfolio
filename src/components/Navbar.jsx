@@ -148,7 +148,12 @@ const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <a href="#">Resume</a>
+            <a
+              href="https://drive.google.com/file/d/1kH6rpSYw6X-uCyPNoJNzdBlQuFBd2aXQ/view?usp=sharing"
+              target="__blank"
+            >
+              Resume
+            </a>
           </motion.li>
         </ul>
       </div>
