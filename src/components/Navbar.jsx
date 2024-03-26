@@ -1,8 +1,43 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        // if scrolling down, hide the navbar
+        setShow(false);
+      } else {
+        // if scrolling up, show the navbar
+        setShow(true);
+      }
+
+      // remember the current page location for the next move
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
   return (
-    <div className="navbar bg-transparent border-b border-[#1D2534] flex justify-between items-center">
+    <div
+      className={`navbar bg-transparent border-b border-[#1D2534] flex justify-between items-center fixed w-full transition-transform duration-300 transform ${
+        show ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost sm:hidden">
