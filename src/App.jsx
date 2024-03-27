@@ -1,6 +1,7 @@
 import About from "./components/About";
 import HeroArea from "./components/HeroArea";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 import Social from "./components/Social";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <Social />
       <HeroArea />
       <About />
+      <Projects />
     </div>
   );
 };
