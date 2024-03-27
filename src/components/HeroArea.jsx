@@ -41,7 +41,7 @@ const HeroArea = () => {
   };
 
   return (
-    <div className="w-full h-[100vh] lg:bg-[url(/images/hero.png)] bg:transparent relative bg-cover bg-center bg-no-repeat border-b-[1.9em] border-[#232427] overflow-hidden">
+    <div className="w-full h-[100vh] lg:bg-[url(/images/hero.png)] bg:transparent relative bg-cover bg-center bg-no-repeat  overflow-hidden">
       <div className="w-full h-full absolute top-0 left-0 bg-[#181E29] bg-opacity-70 flex justify-between items-center px-16">
         <div className="w-7/12 flex items-center justify-center ml-8">
           <div className="flex pb-24">

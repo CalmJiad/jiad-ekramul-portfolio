@@ -1,3 +1,4 @@
+import About from "./components/About";
 import HeroArea from "./components/HeroArea";
 import Navbar from "./components/Navbar";
 import Social from "./components/Social";
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar id="Home" />
       <Social />
       <HeroArea />
+      <About />
     </div>
   );
 };

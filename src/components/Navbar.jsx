@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar bg-transparent border-b border-[#1D2534] flex justify-between items-center sticky top-0 w-full transition-transform duration-300 transform ${
+      className={`navbar bg-[#0b1221] border-b border-[#1D2534] flex justify-between items-center sticky z-50 top-0 w-full transition-transform duration-300 transform ${
         show ? "translate-y-0" : "-translate-y-full"
       }`}
     >

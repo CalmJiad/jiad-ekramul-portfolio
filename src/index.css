@@ -10,3 +10,21 @@ body {
   background-color: #0b1221;
   color: #8e9db2;
 }
+
+@layer components {
+  .animate-updown {
+    animation-name: animate-updownAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  @keyframes animate-updownAnim {
+    from {
+      transform: translateY(-20px);
+    }
+    to {
+      transform: translateY(20px);
+    }
+  }
+}
