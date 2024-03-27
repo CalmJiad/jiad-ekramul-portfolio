@@ -65,7 +65,7 @@ const HeroArea = () => {
               </motion.h1>
               <motion.div
                 variants={textVariants}
-                className="absolute flex items-center gap-x-8 mt-8"
+                className="absolute flex items-center gap-x-8 mt-10"
               >
                 <motion.button
                   className="px-8 py-3 rounded-md bg-transparent border border-white btn btn-neutral hover:bg-[#2b3344] text-white hover:border-white hover:text-white"
@@ -98,12 +98,12 @@ const HeroArea = () => {
           </motion.div>
         </div>
         <div
-          className={`w-4/12 absolute right-16 bottom-0 ${heroAreaCss.hidden}`}
+          className={`w-4/12 absolute right-16 -bottom-4 ${heroAreaCss.hidden}`}
         >
           <img
             src={profileImage}
             alt="Jiad-Profile-Img"
-            className="h-[626px] w-[402px] object-cover"
+            className="h-[610px] w-[380px] object-cover"
           />
         </div>
       </div>
