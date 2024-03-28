@@ -19,7 +19,7 @@ export const TextEffect = ({
         opacity: 1,
       },
       {
-        duration: 10,
+        duration: 15,
         delay: stagger(0.2),
       }
     );
