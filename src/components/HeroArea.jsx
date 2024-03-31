@@ -77,14 +77,14 @@ const HeroArea = () => {
           </div>
         </div>
         <div className="w-5/12 flex items-center justify-center">
-          <div
-            className={`bg-[#1c2129] bg-opacity-70 rounded-xl mx-auto ${styles.box}`}
-          >
-            <img
-              src={profileImage}
-              alt="Jiad-Profile-Img"
-              className="rounded-2xl shadow-2xl h-[20rem] object-cover"
-            />
+          <div className={styles.fancyBorderBox}>
+            <div className={styles.content}>
+              <img
+                className={styles.image}
+                src={profileImage}
+                alt="Jiad-Profile-Img"
+              />
+            </div>
           </div>
         </div>
       </div>
