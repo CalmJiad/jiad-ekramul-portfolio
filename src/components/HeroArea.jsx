@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import profileImage from "../../public/images/profile.png";
-import heroAreaCss from "../styles/heroArea.module.css";
+import profileImage from "../../public/images/profile2.png";
+import "../index.css";
+import styles from "../styles/heroArea.module.css";
 
 const HeroArea = () => {
   const textVariants = {
@@ -26,25 +27,11 @@ const HeroArea = () => {
     },
   };
 
-  const sliderTextVariants = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: "-220%",
-      transition: {
-        repeat: Infinity,
-        duration: 20,
-        repeatType: "mirror",
-      },
-    },
-  };
-
   return (
-    <div className="w-full h-[100vh] lg:bg-[url(/images/hero.png)] bg:transparent relative bg-cover bg-center bg-no-repeat  overflow-hidden">
-      <div className="w-full h-full absolute top-0 left-0 bg-[#181E29] bg-opacity-70 flex justify-between items-center px-16">
+    <div className="w-full h-[70svh] bg:transparent">
+      <div className="w-full h-full bg-[#181E29] bg-opacity-70 flex justify-between items-center px-16">
         <div className="w-7/12 flex items-center justify-center ml-8">
-          <div className="flex pb-24">
+          <div className="flex items-center justify-center">
             <motion.div
               className="textContainer"
               variants={textVariants}
@@ -65,7 +52,7 @@ const HeroArea = () => {
               </motion.h1>
               <motion.div
                 variants={textVariants}
-                className="absolute flex items-center gap-x-8 mt-10"
+                className="flex items-center gap-x-8 mt-10"
               >
                 <motion.button
                   className="px-8 py-3 rounded-md bg-transparent border border-white btn btn-neutral hover:bg-[#2b3344] text-white hover:border-white hover:text-white"
@@ -88,23 +75,17 @@ const HeroArea = () => {
               />
             </motion.div>
           </div>
-          <motion.div
-            className="absolute pointer-events-none text-[40vh] -bottom-[120px] whitespace-nowrap text-[#ffffff09] w-full font-bold"
-            variants={sliderTextVariants}
-            initial="initial"
-            animate="animate"
-          >
-            Frontend Backend Enthusiast Influencer
-          </motion.div>
         </div>
-        <div
-          className={`w-4/12 absolute right-16 -bottom-4 ${heroAreaCss.hidden}`}
-        >
-          <img
-            src={profileImage}
-            alt="Jiad-Profile-Img"
-            className="h-[610px] w-[380px] object-cover"
-          />
+        <div className="w-5/12 flex items-center justify-center">
+          <div
+            className={`bg-[#1c2129] bg-opacity-70 rounded-xl mx-auto ${styles.box}`}
+          >
+            <img
+              src={profileImage}
+              alt="Jiad-Profile-Img"
+              className="rounded-2xl shadow-2xl h-[20rem] object-cover"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -1,10 +1,33 @@
+import { motion } from "framer-motion";
 import programmer from "../../public/images/programmer.png";
 import "../index.css";
 
 const About = () => {
+  const sliderTextVariants = {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: "-220%",
+      transition: {
+        repeat: Infinity,
+        duration: 20,
+        repeatType: "mirror",
+      },
+    },
+  };
+
   return (
-    <div className="w-full h-[140vh] lg:bg-[url(/images/wave.png)] bg:transparent bg-cover bg-center bg-no-repeat flex items-center justify-center">
+    <div className="relative w-full h-[150vh] lg:bg-[url(/images/wave.png)] bg:transparent bg-cover bg-center bg-no-repeat flex items-center justify-center overflow-hidden">
       <div className="flex items-center justify-between w-full mx-auto px-12">
+        <motion.div
+          className="absolute pointer-events-none text-[26vh] -top-[70px] whitespace-nowrap text-[#ffffff09] w-full font-bold"
+          variants={sliderTextVariants}
+          initial="initial"
+          animate="animate"
+        >
+          Frontend Backend Enthusiast Writer Influencer
+        </motion.div>
         <div className="w-4/12 mx-auto">
           <img
             className="md:order-2 object-cover ml-auto animate-updown"
