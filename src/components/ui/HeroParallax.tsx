@@ -87,9 +87,9 @@ export const HeroParallax = ({ products }) => {
 
 const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-20 -top-40">
+    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full sm:left-20 left-0 sm:-top-40 top-35 md:text-left text-center">
       <h1 className="text-2xl md:text-8xl text-[#fff] font-bold font-cute-font">
-        The Projects <br /> I have worked on
+        The Projects <br className="md:block hidden" /> I have worked on
       </h1>
       <p className="max-w-2xl text-base md:text-4xl mt-8 font-cute-font">
         I love to build cross-platform dynamic products with the <br /> latest
@@ -110,7 +110,7 @@ const ProductCard = ({ product, translate }) => {
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-96 md:w-[30rem] w-[12rem] relative flex-shrink-0"
     >
       <a
         href={product.link}

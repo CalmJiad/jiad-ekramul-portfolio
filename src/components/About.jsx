@@ -18,7 +18,7 @@ const About = () => {
   };
 
   return (
-    <div className="relative w-full xl:h-[130svh] bg-[url(/images/wave.png)] bg:transparent bg-cover bg-center bg-no-repeat flex items-center justify-center overflow-hidden">
+    <div className="relative w-full xl:h-[170svh] bg-[url(/images/wave.png)] bg:transparent bg-cover bg-center bg-no-repeat flex items-center justify-center overflow-hidden">
       <div className="flex xl:flex-row flex-col items-center justify-between w-full h-full mx-auto px-12">
         <motion.div
           className="absolute pointer-events-none sm:text-[26vh] text-[20vh] sm:-top-[70px] -top-[40px] whitespace-nowrap text-[#ffffff09] w-full font-bold"
