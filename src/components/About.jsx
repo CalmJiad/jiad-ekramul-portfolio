@@ -18,35 +18,36 @@ const About = () => {
   };
 
   return (
-    <div className="relative w-full h-[150vh] lg:bg-[url(/images/wave.png)] bg:transparent bg-cover bg-center bg-no-repeat flex items-center justify-center overflow-hidden">
-      <div className="flex items-center justify-between w-full mx-auto px-12">
+    <div className="relative w-full xl:h-[130svh] bg-[url(/images/wave.png)] bg:transparent bg-cover bg-center bg-no-repeat flex items-center justify-center overflow-hidden">
+      <div className="flex xl:flex-row flex-col items-center justify-between w-full h-full mx-auto px-12">
         <motion.div
-          className="absolute pointer-events-none text-[26vh] -top-[70px] whitespace-nowrap text-[#ffffff09] w-full font-bold"
+          className="absolute pointer-events-none sm:text-[26vh] text-[20vh] sm:-top-[70px] -top-[40px] whitespace-nowrap text-[#ffffff09] w-full font-bold"
           variants={sliderTextVariants}
           initial="initial"
           animate="animate"
         >
           Frontend Backend Enthusiast Writer Influencer
         </motion.div>
-        <div className="w-4/12 mx-auto">
+        <div className="sm:w-4/12 w-full mx-auto xl:order-none md:order-1 order-2 xl:pt-0 md:pt-72 pt-0">
           <img
-            className="md:order-2 object-cover ml-auto animate-updown"
+            className="object-cover ml-auto animate-updown"
             src={programmer}
             width="500px"
             height="500px"
             alt="Banner"
           />
         </div>
-        <div className="w-6/12 px-4 flex flex-col justify-center space-y-20 mt-48">
-          <p className="block text-4xl font-medium font-cute-font leading-[1.1] text-wrap my-auto">
-            <div className="text-7xl text-wrap pb-2">Hello!</div> This is
-            Ekramul Jiad. Frontend focused Software Developer, crafting seamless
-            digital experiences: tansforming ideas into intuitive websites and{" "}
-            <br />
-            cross-platform applications.
+        <div className="xl:w-6/12 md:w-[80%] w-full sm:px-4 px-0 flex flex-col justify-center space-y-20 sm:mt-48 md:mt-20 mt-0 sm:pb-0 pb-12 sm:pt-0 pt-48 xl:order-none md:order-2 order-1">
+          <p className="block xl:text-4xl md:text-3xl text-[1.5rem] font-medium font-cute-font leading-[1.1] text-pretty my-auto xl:text-left text-center">
+            <div className="md:text-7xl text-5xl xl:text-wrap text-nowrap pb-2">
+              Hello!
+            </div>{" "}
+            This is Ekramul Jiad. Frontend focused Software Developer, crafting
+            seamless digital experiences: tansforming ideas into intuitive
+            websites and cross platform applications.
           </p>
-          <div className="flex flex-col items-start">
-            <h2 className="text-7xl text-center font-medium text-wrap font-cute-font pb-8">
+          <div className="sm:flex flex-col xl:items-start items-center hidden xl:pb-0 md:pb-20 pb-0">
+            <h2 className="xl:text-7xl md:text-5xl text-[1.5rem] text-center font-medium text-wrap font-cute-font pb-8">
               Technologies I Love To Use!
             </h2>
             <div className="flex flex-col gap-y-10 card shadow-xl bg-[#2A323C] py-10 px-3">
@@ -440,6 +441,21 @@ const About = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="sm:w-6/12 w-full sm:px-4 px-0 xl:hidden sm:hidden flex flex-col justify-center space-y-20 sm:mt-48 mt-0 sm:pb-0 xl:py-0 py-12 sm:order-none order-3">
+          <p className="block sm:text-4xl text-[1.5rem] font-medium font-cute-font leading-[1.1] text-pretty my-auto sm:text-left text-center">
+            <div className="sm:text-7xl text-5xl sm:text-wrap text-nowrap pb-4">
+              My Tech Stack!
+            </div>{" "}
+            <div className="">
+              As a self-taught software developer, I find immense satisfaction
+              in writing code and finding solutions to complex problems. My real
+              love lies in creating web applications using JavaScript and its
+              libraries and frameworks. I am all about collaborating with a
+              purpose driven team that shares a common goal & I always strive to
+              bring my best to the table.
+            </div>
+          </p>
         </div>
       </div>
     </div>
