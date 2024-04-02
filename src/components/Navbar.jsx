@@ -154,7 +154,7 @@ const Navbar = () => {
             className="hover:text-white text-base pr-2"
           >
             <a
-              href="https://drive.google.com/file/d/1kH6rpSYw6X-uCyPNoJNzdBlQuFBd2aXQ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1QZwg48rEFZU0wac_oqWg_hSfo4ClwRkA/view?usp=drive_link"
               target="__blank"
             >
               Resume

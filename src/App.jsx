@@ -1,8 +1,8 @@
-import About from "./components/About";
+// import About from "./components/About";
 import HeroArea from "./components/HeroArea";
-import Motto from "./components/Motto";
+// import Motto from "./components/Motto";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
+// import Projects from "./components/Projects";
 import Social from "./components/Social";
 
 const App = () => {
@@ -11,9 +11,9 @@ const App = () => {
       <Navbar id="Home" />
       <Social />
       <HeroArea />
-      <About />
+      {/* <About />
       <Projects />
-      <Motto />
+      <Motto /> */}
     </div>
   );
 };
