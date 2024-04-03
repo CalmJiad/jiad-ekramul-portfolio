@@ -1,6 +1,6 @@
 import About from "./components/About";
 import HeroArea from "./components/HeroArea";
-// import Motto from "./components/Motto";
+import Motto from "./components/Motto";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Social from "./components/Social";
@@ -13,7 +13,7 @@ const App = () => {
       <HeroArea />
       <About />
       <Projects />
-      {/* <Motto /> */}
+      <Motto />
     </div>
   );
 };

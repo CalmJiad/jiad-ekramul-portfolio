@@ -73,7 +73,7 @@ export function GradientBorderButton({
     >
       <div
         className={cn(
-          "w-auto text-[#2e343a] font-bold z-10 px-12 py-3 rounded-[inherit]",
+          "w-auto text-[#1f2327] font-bold z-10 sm:px-12 sm:py-3 px-8 py-2 rounded-[inherit]",
           className
         )}
       >
@@ -97,7 +97,7 @@ export function GradientBorderButton({
         }}
         transition={{ ease: "linear", duration: duration ?? 1 }}
       />
-      <div className="bg-gradient-to-r from-[#00CBBF] to-[#FF52D8] absolute z-1 flex-none inset-[2px] rounded-[100px]" />
+      <div className="bg-gradient-to-r from-[#00CBBF] to-[#FF52D8] absolute z-1 flex-none inset-[4px] rounded-[100px]" />
     </Tag>
   );
 }

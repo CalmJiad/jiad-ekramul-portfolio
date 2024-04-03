@@ -42,7 +42,7 @@ export const TextEffect = ({
   return (
     <div className={cn("font-medium", className)}>
       <div className="mt-4">
-        <div className="font-cute-font text-3xl leading-snug tracking-wide">
+        <div className="font-cute-font lg:text-3xl sm:text-3xl text-[1.1rem] text-center text-pretty">
           {renderWords()}
         </div>
       </div>
