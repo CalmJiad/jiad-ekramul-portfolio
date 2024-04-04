@@ -52,7 +52,7 @@ const Contact = () => {
       variants={variants}
       initial="initial"
       whileInView="animate"
-      className="h-[calc(100svh-80px)] max-w-[1366px] m-auto flex items-center justify-center space-x-40 overflow-hidden"
+      className="h-[calc(100svh-80px)] max-w-[1366px] m-auto flex items-center justify-center space-x-32 overflow-hidden"
     >
       <motion.div
         variants={variants}
@@ -99,7 +99,7 @@ const Contact = () => {
           whileInView={{ opacity: 0 }}
           transition={{ delay: 3, duration: 1 }}
         >
-          <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+          <svg width="400px" height="400px" viewBox="0 0 32.666 32.666">
             <motion.path
               strokeWidth={0.2}
               fill="none"
