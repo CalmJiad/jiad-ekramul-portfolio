@@ -20,6 +20,7 @@ module.exports = {
         "cormorant-sc": ['"Cormorant SC"', "serif"],
       },
       screens: {
+        "2xl": "1281px",
         "2xs": "375px",
         "3xs": "425px",
       },
