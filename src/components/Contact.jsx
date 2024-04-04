@@ -52,13 +52,16 @@ const Contact = () => {
       variants={variants}
       initial="initial"
       whileInView="animate"
-      className="h-[calc(100svh-80px)] max-w-[1366px] m-auto flex items-center justify-center space-x-32 overflow-hidden"
+      className="min-h-[100svh] max-w-[1366px] m-auto flex lg:flex-row flex-col items-center justify-center lg:space-x-32 space-x-0 overflow-hidden"
     >
       <motion.div
         variants={variants}
-        className="space-y-8 font-cute-font text-2xl mr-10"
+        className="space-y-8 font-cute-font text-2xl xl:mr-10 mr-0 lg:ml-0 ml:10 lg:mb-0 mb-8 pt-8"
       >
-        <motion.h1 variants={variants} className="text-5xl">
+        <motion.h1
+          variants={variants}
+          className="xl:text-5xl lg:text-4xl md:text-8xl text-5xl"
+        >
           Let&apos;s have a chat
         </motion.h1>
         <motion.div variants={variants} className="item">
@@ -91,7 +94,7 @@ const Contact = () => {
           </h2>
         </div>
       </motion.div>
-      <div className="w-[570px] relative font-cute-font text-xl">
+      <div className="xl:w-[570px] lg:w-[400px] md:w-[500px] w-[90%] font-cute-font text-xl lg:pb-0 pb-8 pt-8">
         <motion.div
           style={{ stroke: "#8D80FA" }}
           className="absolute pointer-events-none m-auto"
@@ -99,7 +102,10 @@ const Contact = () => {
           whileInView={{ opacity: 0 }}
           transition={{ delay: 3, duration: 1 }}
         >
-          <svg width="400px" height="400px" viewBox="0 0 32.666 32.666">
+          <svg
+            className="lg:w-[400px] lg:h-[400px] md:w-[350px] md:h-[350px] w-[250px] h-[250px] xl:mt-10 lg:mt-0 mt-20 xl:ml-16 lg:ml-0 md:ml-20 ml-4"
+            viewBox="0 0 32.666 32.666"
+          >
             <motion.path
               strokeWidth={0.2}
               fill="none"
@@ -154,8 +160,6 @@ const Contact = () => {
           <button className="px-8 py-2 rounded-md bg-transparent border border-[#A6ADBB] btn btn-neutral hover:bg-[#2b3344] text-white hover:border-[#A6ADBB] hover:text-white w-[100%] cursor-pointer">
             Submit
           </button>
-          {/* {error && "Error"}
-          {success && "Success"} */}
         </motion.form>
       </div>
     </motion.div>
