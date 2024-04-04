@@ -72,7 +72,7 @@ const BlogShowcase = () => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["end end", "start start"],
+    offset: ["start start", "end end"],
   });
 
   const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });

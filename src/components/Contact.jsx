@@ -82,6 +82,14 @@ const Contact = () => {
           </h2>
           <span>+4915759781853</span>
         </div>
+        <div className="item">
+          <h2 className="text-sm font-medium flex items-center m-auto gap-x-2">
+            #Copyright © 2024 - All Rights Reserved By Ekramul Jiad
+          </h2>
+          <h2 className="text-sm font-medium flex items-center m-auto gap-x-2">
+            #Designed & Developed By Ekramul Jiad
+          </h2>
+        </div>
       </motion.div>
       <div className="w-[570px] relative font-cute-font text-xl">
         <motion.div
