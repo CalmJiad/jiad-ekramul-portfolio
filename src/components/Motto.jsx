@@ -7,7 +7,7 @@ const Motto = () => {
     <div className="h-[100svh] bg-[#21262F] w-full dark:bg-blac dark:bg-grid-white/[0.4] bg-grid-black/[0.4] relative flex flex-col items-center justify-center">
       <div className="absolute bg-[#21262F] pointer-events-none inset-0 dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="flex flex-col lg:gap-y-7 gap-y-5 items-center justify-center">
-        <p className="font-cute-font lg:text-7xl md:text-[3.1rem] text-[1.6rem] font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-r from-[#FF52D8] to-[#00CBBF] pt-8">
+        <p className="font-cute-font lg:text-7xl md:text-[3.1rem] 2xs:text-[1.75rem] text-[1.6rem] font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-r from-[#FF52D8] to-[#00CBBF] pt-8">
           How about building something together?
         </p>
         <div className="w-[70%] text-center text-pretty mx-auto">

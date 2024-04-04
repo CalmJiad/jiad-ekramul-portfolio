@@ -45,7 +45,7 @@ const HeroArea = () => {
               Md Ekramul Haque Jiad
             </motion.h2>
             <motion.h1
-              className="xl:text-[1.5em] lg:text-[1.2em] md:[1em] text-[0.80em] xl:tracking-[2px] md:tracking-[1px] tracking-0px font-poppins font-medium text-white"
+              className="xl:text-[1.5em] lg:text-[1.2em] md:[1em] 2xs:text-[1.24em] text-[1.2em] xl:tracking-[2px] md:tracking-[1px] tracking-[0.4px] font-cute-font font-medium text-white"
               variants={textVariants}
             >
               Software Developer & DevOps Enthusiast
@@ -67,12 +67,6 @@ const HeroArea = () => {
                 Contact Me
               </motion.button>
             </motion.div>
-            <motion.img
-              variants={textVariants}
-              animate="scrollButton"
-              src="/scroll.png"
-              alt=""
-            />
           </motion.div>
         </div>
         <div className="sm:w-5/12 flex items-center justify-center w-full sm:py-0 py-10">

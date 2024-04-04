@@ -88,10 +88,10 @@ export const HeroParallax = ({ products }) => {
 const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full sm:left-20 left-0 sm:-top-40 top-35 md:text-left text-center">
-      <h1 className="text-2xl md:text-8xl text-[#fff] font-bold font-cute-font">
+      <h1 className="md:text-8xl 2xs:text-[2rem] text-3xl text-[#fff] font-bold font-cute-font">
         The Projects <br className="md:block hidden" /> I have worked on
       </h1>
-      <p className="max-w-2xl text-base md:text-4xl mt-8 font-cute-font">
+      <p className="max-w-2xl 2xs:text-[1.15rem] text-[1.05rem] md:text-4xl mt-8 font-cute-font">
         I love to build cross-platform dynamic products with the <br /> latest
         technologies and frameworks. Love to develop and <br /> design amazing
         apps that results in a great user experience.
