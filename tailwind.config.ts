@@ -19,6 +19,10 @@ module.exports = {
         poppins: ['"Poppins"', "sans-serif"],
         "cormorant-sc": ['"Cormorant SC"', "serif"],
       },
+      screens: {
+        "2xs": "375px",
+        "3xs": "425px",
+      },
     },
   },
   darkMode: "class",
