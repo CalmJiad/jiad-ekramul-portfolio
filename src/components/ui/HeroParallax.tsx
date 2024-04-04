@@ -87,7 +87,7 @@ export const HeroParallax = ({ products }) => {
 
 const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full sm:left-20 left-0 sm:-top-40 top-35 md:text-left text-center">
+    <div className="max-w-7xl relative mx-auto lg:py-40 md:py-30 py-20 px-4 w-full sm:left-20 left-0 sm:-top-40 top-35 md:text-left text-center">
       <h1 className="md:text-8xl 2xs:text-[2rem] text-3xl text-[#fff] font-bold font-cute-font">
         The Projects <br className="md:block hidden" /> I have worked on
       </h1>
@@ -110,7 +110,7 @@ const ProductCard = ({ product, translate }) => {
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 md:w-[30rem] w-[12rem] relative flex-shrink-0"
+      className="group/product xl:h-[16.5rem] lg:h-[25.5rem] md:h-[13.69rem] h-[19.5rem] xl:w-[27rem] lg:w-[26rem] md:w-[17rem] w-[15rem] relative flex-shrink-0"
     >
       <a
         href={product.link}
