@@ -45,7 +45,7 @@ const HeroArea = () => {
               Md Ekramul Haque Jiad
             </motion.h2>
             <motion.h1
-              className="xl:text-[1.5em] lg:text-[1.2em] md:[1em] 2xs:text-[1.24em] text-[1.2em] xl:tracking-[2px] md:tracking-[1px] tracking-[0.4px] font-cute-font font-medium text-white"
+              className="xl:text-[2.6em] lg:text-[2em] md:[1.9em] 2xs:text-[1.24em] text-[1.2em] xl:tracking-[2px] md:tracking-[1px] tracking-[0.4px] font-cute-font font-medium text-white"
               variants={textVariants}
             >
               Software Developer & DevOps Enthusiast
