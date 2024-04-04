@@ -1,5 +1,6 @@
 import About from "./components/About";
 import BlogShowcase from "./components/BlogShowcase";
+import Contact from "./components/Contact";
 import HeroArea from "./components/HeroArea";
 import Motto from "./components/Motto";
 import Navbar from "./components/Navbar";
@@ -16,6 +17,7 @@ const App = () => {
       <Projects />
       <Motto />
       <BlogShowcase />
+      <Contact />
     </div>
   );
 };
