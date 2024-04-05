@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [show, setShow] = useState(true);
@@ -65,28 +66,60 @@ const Navbar = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <a href="#home">Home</a>
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={500}
+              >
+                Home
+              </Link>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <a href="#projects">Projects</a>
+              <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Projects
+              </Link>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <a href="#about">About</a>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                About
+              </Link>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <a href="#contact">Contact</a>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Contact
+              </Link>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, scale: 0.5 }}
@@ -121,7 +154,15 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className=" hover:text-white text-base pr-2"
           >
-            <a href="#">Home</a>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={500}
+            >
+              Home
+            </Link>
           </motion.li>
           <motion.li
             initial={{ opacity: 0, scale: 0.5 }}
@@ -129,7 +170,15 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="hover:text-white text-base pr-2"
           >
-            <a href="#">Projects</a>
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Projects
+            </Link>
           </motion.li>
           <motion.li
             initial={{ opacity: 0, scale: 0.5 }}
@@ -137,7 +186,15 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="hover:text-white text-base pr-2"
           >
-            <a href="#">About</a>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              About
+            </Link>
           </motion.li>
           <motion.li
             initial={{ opacity: 0, scale: 0.5 }}
@@ -145,7 +202,15 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="hover:text-white text-base pr-2"
           >
-            <a href="#">Contact</a>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Contact
+            </Link>
           </motion.li>
           <motion.li
             initial={{ opacity: 0, scale: 0.5 }}

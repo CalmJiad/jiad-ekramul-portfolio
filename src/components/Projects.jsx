@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import { HeroParallax } from "./ui/HeroParallax";
 
 const Projects = () => {
@@ -56,9 +57,11 @@ const Projects = () => {
   ];
 
   return (
-    <div>
-      <HeroParallax products={productsArr} />
-    </div>
+    <Element id="projects" name="projects">
+      <div>
+        <HeroParallax products={productsArr} />
+      </div>
+    </Element>
   );
 };
 
