@@ -103,7 +103,7 @@ const Contact = () => {
           transition={{ delay: 3, duration: 1 }}
         >
           <svg
-            className="lg:w-[400px] lg:h-[400px] md:w-[350px] md:h-[350px] w-[250px] h-[250px] xl:mt-10 lg:mt-0 mt-20 xl:ml-16 lg:ml-0 md:ml-20 3xs:ml-16 2xs:ml-12 ml-8"
+            className="lg:w-[400px] lg:h-[400px] md:w-[350px] md:h-[350px] w-[250px] h-[250px] xl:mt-10 lg:mt-0 mt-20 xl:ml-16 lg:ml-0 md:ml-20 3xs:ml-16 2xs:ml-12 ml-[2.5rem]"
             viewBox="0 0 32.666 32.666"
           >
             <motion.path
